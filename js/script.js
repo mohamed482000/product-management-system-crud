@@ -58,7 +58,7 @@ function addInputsValue(e) {
       itemUpdated.ads = adsInput.value
       itemUpdated.taxes = taxesInput.value
       itemUpdated.discount = discountInput.value
-      itemUpdated.total = totalPrice
+      itemUpdated.total = totalPrice > 1 ? totalPrice : itemUpdated.total
       itemUpdated.category = categoryInput.value
       mood = 'create'
     }
