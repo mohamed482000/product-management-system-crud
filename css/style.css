@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* common */
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 6px;
+}
+/* Body */
+body{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+/* header */
+.h2-header{
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.p-header{
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 8px;
+}
+/* inputs */
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+input{
+    margin-bottom: 10px;
+    background-color: #111;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    border: 0;
+    border-radius: 7px;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+input[type="submit"]{
+    background-color: #0d0d41;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #51025f;
+}
+.title-input , .count-input , .category-input ,.create-submit , .search-input{
+    display: block;
+    width: 100%;
+}
+.four-input-div{
+    display: flex;
+    
+}
+.four-inputs {
+    display: flex;
+    width: 40%;
+}
+.four-inputs input{
+    min-width: 50%;
+} 
+.tow-inputs{
+    display: flex;
+    width: 100%;
+}
+.tow-inputs input , .delete-submit{
+    width: 100%;
+}
+.m-r{
+    margin-right: 5px;
+}
+.total-span{
+    height: 26px;
+    padding-top: 5px;
+    width: 150px;
+    border-radius: 6px;
+    display: block;
+}
+/* table style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.delete-input , .update-input{
+    padding: 8px;
+    margin-bottom: 0;
+    width: 85%;
+    border-radius: 15px;
+}
+
+th, td {
+    text-align: center;
+    border-bottom: 1px solid #5a4f4f;
+}
+th{
+    border-top: 1px solid #5a4f4f;
+  }
+
+@media screen and (min-width:720px) {
+    th{
+        padding: 8px;
+    }
+}
+@media screen and (max-width:720px) {
+    th{
+        padding: 5px;
+        font-size: 10px;
+    }
+    tr{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .delete-input , .update-input{
+        padding: 3px;
+        margin-bottom: 0;
+        border-radius: 15px;
+        font-size: 8px;
+    }
+
+}

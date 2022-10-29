@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>cruds</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h2 class="h2-header">cruds</h2>
+            <p class="p-header">products management system</p>
+        </header>
+        <div class="container">
+            <form class="inputs" novalidate>
+                  <input type="text" class="title-input" placeholder="title">
+                  <div class="four-input-div">
+                    <div action="" class="four-inputs">
+                        <input type="number" min="1" max="1000000" class="price-input m-r" placeholder="price">
+                        <input type="number" min="1" max="1000000" class="taxes-input m-r" placeholder="taxes">
+                        <input type="number" min="1" max="1000000" class="ads-input m-r" placeholder="ads">
+                        <input type="number" min="1" max="1000000" class="discount-input m-r" placeholder="discount">
+                        <span class="total-span">total</span>
+                    </div>
+                  </div>
+                  <input type="number" min="1" max="10" class="count-input" placeholder="count">
+                  <input type="text" class="category-input" placeholder="category">
+                  <input type="submit" class="create-submit" value="create">
+                  <input type="search" class="search-input" placeholder="search">
+                  <div class="tow-inputs">
+                  <input type="submit" class="search-by-title-submit m-r" value="search by title">
+                  <input type="submit" class="search-by-category-submit m-r" value="search by category">
+                  </div>
+                  <input type="submit" class="delete-submit " value="delete">
+            </form>
+            <div class="div-cared-table">
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                      </tr>
+            
+                      <tbody class="table-d">
+      
+                  
+                      </tbody>
+                </table>
+                
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
